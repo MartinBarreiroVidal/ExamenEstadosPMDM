@@ -15,32 +15,29 @@ fun gestor(): Int {
         is Estados.Idle -> {
             if (llegado) {
                 if (nivel_1) nivel_actual = 1
-                println("Seleccionado nivel 1, Plaza Compostela. ")
-                println("")
 
                 if (nivel_0) nivel_actual = 0
-                println("Seleccionado nivel 0, García Barbón. ")
-                println("")
 
                 nivel_0 = false
                 nivel_1 = false
                 llegado = false
 
-                estado_actual = Estados.MovingUP
             } else {
                 estado_actual = Estados.Error
                 println("Nivel seleccionado NO disponible")
                 println("")
             }
             return nivel_actual
+            estado_actual = Estados.MovingUP
+
         }
         is Estados.MovingUP -> {
             println("Subiendo...")
             println("")
             nivel_actual = 2
 
-            estado_actual = Estados.MovingDOWN
             return nivel_actual
+            estado_actual = Estados.MovingDOWN
         }
         is Estados.MovingDOWN -> {
             println("Bajando...")

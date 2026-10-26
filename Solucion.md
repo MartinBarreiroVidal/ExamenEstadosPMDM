@@ -1,4 +1,4 @@
-## Examen Máquina de Estados - Halo Vigo
+## Examen Máquina de Estados - Halo Vigo - Martín Barreiro
 
 ### Tipo de Variables:
 

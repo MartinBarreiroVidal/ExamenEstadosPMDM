@@ -10,7 +10,6 @@ sealed class Estados {
             if (nivel_1 && nivel_actual == 0) return MovingUP
             if (nivel_0 && nivel_actual == 1) return MovingDOWN
             return this
-
         }
     }
     object MovingUP : Estados() {

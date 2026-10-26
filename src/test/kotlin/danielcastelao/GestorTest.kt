@@ -29,7 +29,6 @@ class GestorTest {
         assertEquals(Estados.Idle, estado_actual)
         assertEquals(1, nivel_actual)
 
-
     }
     @Test
     fun comprobarBajadaExitosa () {
